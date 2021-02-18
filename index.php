@@ -1,5 +1,7 @@
 <?php 
 
-echo "hello";
+$shop = $_GET;
+
+echo print_r($shop);
 
 ?>
