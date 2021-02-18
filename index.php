@@ -16,8 +16,18 @@ $shop  = "gallery-one-shop";
 
 $collectionList = shopify_call($token, $shop, "/admin/api/2021-01/custom_collections.json", array(), "GET");
 $collectionList = json_decode($collectionList['response'], JSON_PRETTY_PRINT);
+$collection_id  = $collectionList['custom_collections'][0]['id'];
 
-print_r($collectionList);
+
+$collects = $collectionList = shopify_call($token, $shop, "/admin/api/2021-01/collects.json", array('collection_id' => $collection_id), "GET");
+
+foreach ($collects as $collect) {
+	foreach ($collect as $key => $value) {
+		$products = shopify_call($token, $shop, "/admin/api/2021-01/products/". $value['product_id'] .".json", array(), "GET");
+		$products = json_decode($products['response'], JSON_PRETTY_PRINT);
+		echo $products['product']['title'];
+	}
+}
 
 exit();
 
