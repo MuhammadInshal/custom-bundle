@@ -26,7 +26,7 @@ foreach ($collects as $collect) {
 	foreach ($collect as $key => $value) {
 		$products = shopify_call($token, $shop, "/admin/api/2021-01/products/". $value['product_id'] .".json", array(), "GET");
 		$products = json_decode($products['response'], JSON_PRETTY_PRINT);
-		echo $products['product']['title'];
+		echo $products['product']['title'] . "<br />";
 	}
 }
 
