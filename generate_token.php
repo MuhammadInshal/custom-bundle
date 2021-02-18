@@ -43,6 +43,9 @@ if (hash_equals($hmac, $computed_hmac)) {
 	// Show the access token (don't do this in production!)
 	echo $access_token;
 
+	// Redirect
+    header("Location: index.php");
+
 } else {
 	// Someone is trying to be shady!
 	die('This request is NOT from Shopify!');
