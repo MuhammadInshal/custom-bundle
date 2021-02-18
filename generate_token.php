@@ -44,7 +44,7 @@ if (hash_equals($hmac, $computed_hmac)) {
 	echo $access_token;
 
 	// Redirect
-    header("Location: index.php");
+    //header("Location: index.php");
 
 } else {
 	// Someone is trying to be shady!
