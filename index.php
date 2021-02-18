@@ -14,21 +14,36 @@ $shop  = "gallery-one-shop";
 
 //echo $shop;
 
-$collectionList = shopify_call($token, $shop, "/admin/api/2021-01/custom_collections.json", array(), "GET");
-$collectionList = json_decode($collectionList['response'], JSON_PRETTY_PRINT);
-$collection_id  = $collectionList['custom_collections'][0]['id'];
+// $collectionList = shopify_call($token, $shop, "/admin/api/2021-01/custom_collections.json", array(), "GET");
+// $collectionList = json_decode($collectionList['response'], JSON_PRETTY_PRINT);
+// $collection_id  = $collectionList['custom_collections'][0]['id'];
 
-echo $collection_id;
+// echo $collection_id;
 
 
-$collects = shopify_call($token, $shop, "/admin/api/2021-01/collects.json", array('collection_id' => $collection_id), "GET");
-$collects = json_decode($collects['response'], JSON_PRETTY_PRINT);
+// $collects = shopify_call($token, $shop, "/admin/api/2021-01/collects.json", array('collection_id' => $collection_id), "GET");
+// $collects = json_decode($collects['response'], JSON_PRETTY_PRINT);
 
-foreach ($collects as $collect) {
-	foreach ($collect as $key => $value) {
-		$products = shopify_call($token, $shop, "/admin/api/2021-01/products/". $value['product_id'] .".json", array(), "GET");
-		$products = json_decode($products['response'], JSON_PRETTY_PRINT);
-		echo $products['product']['title'] . "<br />";
+// foreach ($collects as $collect) {
+// 	foreach ($collect as $key => $value) {
+// 		$products = shopify_call($token, $shop, "/admin/api/2021-01/products/". $value['product_id'] .".json", array(), "GET");
+// 		$products = json_decode($products['response'], JSON_PRETTY_PRINT);
+// 		echo $products['product']['title'] . "<br />";
+// 	}
+// }
+$products = shopify_call($token, $shop, "/admin/api/2021-01/products.json", array(), "GET");
+$products = json_decode($products['response'], JSON_PRETTY_PRINT);
+
+foreach ($products as $product) {
+	foreach ($product as $key => $value) {
+		$image = '';
+
+		if (count($value['images'] > 0)) {
+			$image = $value['images'][0]['src'];
+		}
+
+		echo "<img src='". $image ."' width='60'> <br />";
+		echo $value['title'] . "<br />";
 	}
 }
 
