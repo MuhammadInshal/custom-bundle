@@ -1,7 +1,8 @@
 <?php 
 
-$shop = $_GET;
+$store = $_GET;
 
-echo print_r($shop);
+header("Location: install.php?shop=" . $store['shop']);
+exit();
 
 ?>
