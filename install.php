@@ -2,7 +2,7 @@
 
 // Set variables for our request
 $shop = $_GET['shop'];
-$api_key = "148342cf127a61db76616a8d1bc1795e";
+$api_key = "2776cb44b59e7a668e91eb691febed23";
 $scopes = "read_orders,write_products";
 $redirect_uri = "https://custom-product-bundle.herokuapp.com/generate_token.php";
 
