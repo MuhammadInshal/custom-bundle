@@ -1,8 +1,8 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2">Image</th>
-      <th colspan="2">Product</th>
+      <th>Image</th>
+      <th>Product</th>
       <th>Action</th>
     </tr>
   </thead>
@@ -18,9 +18,7 @@
 				if (count($value['images']) > 0) {
 					$image = $value['images'][0]['src'];
 				}
-
-				// echo "<img src='". $image ."' width='60'> <br />";
-				// echo $value['title'] . "<br />";
+				
 				?>
 				<tr>
 			      <td><a href="#"><img width="35" height="35" alt="" src="<?php echo $image; ?>"></a></td>
