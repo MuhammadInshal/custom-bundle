@@ -31,25 +31,45 @@ $shop  = "gallery-one-shop";
 // 		echo $products['product']['title'] . "<br />";
 // 	}
 // }
-$products = shopify_call($token, $shop, "/admin/api/2021-01/products.json", array(), "GET");
-$products = json_decode($products['response'], JSON_PRETTY_PRINT);
+// $products = shopify_call($token, $shop, "/admin/api/2021-01/products.json", array(), "GET");
+// $products = json_decode($products['response'], JSON_PRETTY_PRINT);
 
-foreach ($products as $product) {
-	foreach ($product as $key => $value) {
-		$image = '';
+// foreach ($products as $product) {
+// 	foreach ($product as $key => $value) {
+// 		$image = '';
 
-		if (count($value['images']) > 0) {
-			$image = $value['images'][0]['src'];
-		}
+// 		if (count($value['images']) > 0) {
+// 			$image = $value['images'][0]['src'];
+// 		}
 
-		echo "<img src='". $image ."' width='60'> <br />";
-		echo $value['title'] . "<br />";
-	}
-}
+// 		echo "<img src='". $image ."' width='60'> <br />";
+// 		echo $value['title'] . "<br />";
+// 	}
+// }
 
-exit();
+// exit();
 
 // header("Location: install.php?shop=" . $store['shop']);
 // exit();
+// require_once('home.php');
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<?php
+
+	require_once('home.php');
+
+	?>
+	
+</body>
+</html>
