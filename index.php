@@ -65,11 +65,13 @@ $shop  = "gallery-one-shop";
 </head>
 <body>
 
-	<?php
-
-	require_once('home.php');
-
-	?>
+	<section class="full-width">
+	  <article>
+	    <div class="card">
+	      <?php require_once('home.php'); ?>
+	    </div>
+	  </article>
+	</section>
 	
 </body>
 </html>
