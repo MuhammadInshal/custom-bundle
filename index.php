@@ -65,7 +65,7 @@ $shop  = "gallery-one-shop";
 </head>
 <body>
 
-	<section class="full-width">
+	<section>
 	  <article>
 	    <div class="card">
 	      <?php require_once('home.php'); ?>
