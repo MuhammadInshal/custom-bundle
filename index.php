@@ -18,6 +18,8 @@ $collectionList = shopify_call($token, $shop, "/admin/api/2021-01/custom_collect
 $collectionList = json_decode($collectionList['response'], JSON_PRETTY_PRINT);
 $collection_id  = $collectionList['custom_collections'][0]['id'];
 
+echo $collection_id;
+
 
 $collects = shopify_call($token, $shop, "/admin/api/2021-01/collects.json", array('collection_id' => $collection_id), "GET");
 $collects = json_decode($collects['response'], JSON_PRETTY_PRINT);
