@@ -41,7 +41,7 @@ if (hash_equals($hmac, $computed_hmac)) {
 	$access_token = $result['access_token'];
 
 	// Show the access token (don't do this in production!)
-	//echo $access_token;
+	echo $access_token;
 
 	// Redirect
     header("Location: index.php");
