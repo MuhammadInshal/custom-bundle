@@ -38,7 +38,7 @@ foreach ($products as $product) {
 	foreach ($product as $key => $value) {
 		$image = '';
 
-		if (count($value['images'] > 0)) {
+		if (count($value['images']) > 0) {
 			$image = $value['images'][0]['src'];
 		}
 
