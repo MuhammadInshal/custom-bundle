@@ -2,7 +2,7 @@
 
 $store = $_GET;
 
-header("Location: install.php?shop=" . $store['shop']);
-exit();
+// header("Location: install.php?shop=" . $store['shop']);
+// exit();
 
 ?>
