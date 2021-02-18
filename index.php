@@ -19,7 +19,7 @@ $collectionList = json_decode($collectionList['response'], JSON_PRETTY_PRINT);
 
 print_r($collectionList);
 
-
+exit();
 
 // header("Location: install.php?shop=" . $store['shop']);
 // exit();
