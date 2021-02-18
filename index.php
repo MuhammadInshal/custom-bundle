@@ -9,7 +9,7 @@ require_once("inc/functions.php");
 // $requests       = array_diff_key($requests, array('hmac' => ''));
 // ksort($requests);
 
-$token = "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";
+$token = "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";
 $shop  = "gallery-one-shop";
 
 //echo $shop;
