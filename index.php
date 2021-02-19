@@ -117,6 +117,33 @@ $shop  = "gallery-one-shop";
     <div data-portal-id="popover-Polarisportal2"></div>
   </div>
 </div>
+
+
+<div>
+  <div class="Polaris-Stack Polaris-Stack--vertical">
+    <div class="Polaris-Stack__Item">
+      <div aria-expanded="false" aria-owns="PolarisComboBox2" aria-controls="PolarisComboBox2" aria-haspopup="true" tabindex="0">
+        <div>
+          <div class="">
+            <div class="Polaris-Labelled__LabelWrapper">
+              <div class="Polaris-Label"><label id="PolarisTextField2Label" for="PolarisTextField2" class="Polaris-Label__Text">Tags</label></div>
+            </div>
+            <div class="Polaris-Connected">
+              <div class="Polaris-Connected__Item Polaris-Connected__Item--primary">
+                <div class="Polaris-TextField"><input id="PolarisTextField2" role="combobox" placeholder="Vintage, cotton, summer" autocomplete="off" class="Polaris-TextField__Input" aria-labelledby="PolarisTextField2Label" aria-invalid="false" aria-autocomplete="list" value="" tabindex="0" aria-controls="Polarispopover2" aria-owns="Polarispopover2" aria-expanded="false">
+                  <div class="Polaris-TextField__Backdrop"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="PolarisPortalsContainer">
+    <div data-portal-id="popover-Polarisportal1"></div>
+  </div>
+</div>
 	
 </body>
 </html>
