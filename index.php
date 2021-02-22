@@ -75,6 +75,7 @@ $shop  = "gallery-one-shop";
 			    </div>
 			    <hr/>
 			    <div class="card-section">
+            <button>Select Products</button>
 			      <?php require_once('product_table.php'); ?>
 			    </div>
 			    <hr/>
