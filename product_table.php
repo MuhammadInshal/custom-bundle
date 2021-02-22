@@ -12,6 +12,10 @@
 		$products = shopify_call($token, $shop, "/admin/api/2021-01/products.json", array(), "GET");
 		$products = json_decode($products['response'], JSON_PRETTY_PRINT);
 
+		echo "<pre>";
+		print_r($products);
+		die();
+
 		foreach ($products as $product) {
 			foreach ($product as $key => $value) {
 				$image = '';
