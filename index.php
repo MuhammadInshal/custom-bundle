@@ -66,7 +66,7 @@ $shop  = "gallery-one-shop";
 </head>
 <body>
 
-	<!-- <main>
+	<main>
 		<section>
 		  <article>
 		  	<div class="card has-sections">
@@ -81,8 +81,8 @@ $shop  = "gallery-one-shop";
 			</div>
 		  </article>
 		</section>
-	</main> -->
-<div>
+	</main>
+<!-- <div>
   <div class="Polaris-Page Polaris-Page--fullWidth">
     <div class="Polaris-Page-Header Polaris-Page-Header--hasActionMenu Polaris-Page-Header--mobileView Polaris-Page-Header--noBreadcrumbs Polaris-Page-Header--mediumTitle">
       <div class="Polaris-Page-Header__Row">
@@ -143,7 +143,7 @@ $shop  = "gallery-one-shop";
   <div id="PolarisPortalsContainer">
     <div data-portal-id="popover-Polarisportal1"></div>
   </div>
-</div>
+</div> -->
 	
 </body>
 </html>
